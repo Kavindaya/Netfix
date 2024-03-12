@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+       .title {
+         @apply text-[1.75rem] md:text-[3.125rem] leading-[1.1] font-semibold tracking-wide;
+       } 
+       
+       .subtitle {
+         @apply text-[1.125rem] md:text-[1.625rem] font-light;
+       }
+
+       .red-btn {
+         @apply bg-[#e50914] mt-3 md:mt-0 py-[6px] px-[10px] md:px-[26px] flex items-center rounded-sm text-base md:text-[1.625rem] font-light ;
+       }
+
+       .gray-border{
+         @apply border-t-[8px] border-[#222];
+       }
+
+       .list-item-icon {
+        @apply md:w-6 w-5 md:h-6 h-5 text-white fill-current;
+       }
+
+       .list-item-title{
+        @apply md:text-[1.625rem] text-[1.125rem] tracking-wide;
+       }
+
+       .list-item{
+        @apply flex justify-between w-full bg-[#303030]  py-4 md:py-5 md:px-8 px-4 items-center; 
+       }
+
+       .footer-item{
+        @apply pb-[14px];
+       }
+
+       
+    </style>
+</head>
+<body class="bg-black">
+ <!--Hero section-->
+ <div class="bg-[url('https://thefatork.store/cdn/shop/articles/netflix.jpg?v=1669877376&width=1500')] h-[70vh] md:h-[95vh] bg-cover bg-center relative pt-3">  
+ <!--overlay-->
+  <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-black/80 via-black/30 to-black/80"></div>
+    <!--Navbar-->
+    <div class="flex items-center justify-between w-full px-5 md:px-[28px] z-10 relative">
+      <svg viewBox="0 0 111 30" data-uia="netflix-logo" class="text-[#e50914d3] fill-current h-[24px] md:h-[36px] " aria-hidden="true" focusable="false"><g id="netflix-logo"><path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" id="Fill-14"></path></g></svg>
+      <a href="#" class="bg-[#e50914] py-[0.25rem] px-[0.5rem] md:px-[17px] md:py-[7px] rounded-[3px] text-white text-[0.9rem] ">Sign In</a> 
+    </div> 
+    <!--Main text-->
+    <div class="relative z-10 flex flex-col items-center px-5 text-center justify-center w-[full] md:w-[85%] max-w-[800px] text-white h-full mx-auto gap-3">
+      <h1 class="max-w-screen-sm title">Unlimited movies,Tv shows, and more.  </h1>
+      <p class="subtitle md:py-[12px]">Watch anywhere. cancel anytime.</p>
+      <p class=" text-[18px] md:text-[1.2rem] font-light">Reddy to watch? Enter your email to create or restart your membership.</p>
+     
+      <div class="flex flex-col items-center justify-center w-full md:flex-row md:items-stretch">
+        <input type="text" placeholder="Email address" class=" w-full md:w-[60%]  px-[10px] py-2 md:py-4 bg-white placeholder:text-sm">
+        <button class="red-btn">
+          <span> Get started</span>
+           <svg class="w-5 h-5 text-white fill-current" viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg"><desc>chevron</desc><path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill-rule="evenodd"></path></svg>
+        </button>  
+      </div>
+   </div>
+  </div> 
+   
+  
+  <!--Section 1-->
+  <div class="gray-border">
+    <div class="flex md:flex-row flex-col text-white justify-between py-16 md:gap-[30px] max-w-[1100px] mx-auto items-center h-[70vh] md:h-[50vh] ">
+     <div class="md:w-[52%] w-full text-center md:text-left md:pl-20 ">
+       <h1 class="pb-3 title ">Enjoyed on your Tv.</h1>
+       <p class="px-5 subtitle md:px-0" >Watch on Smart TVs, Playstation, Xbox, Chromecast,<br> Apple TV, Blu-ray players, and more.</p>
+     </div>
+     <div class="relative md:w-[48%] w-[full]  md:pl-60 pt-72 md:pt-10 ">       
+       <iframe class="absolute  top-[45%] h-[200px] w-[250px]  left-[73%] items-center  -translate-x-1/2 -translate-y-1/2" src="https://www.youtube.com/embed/I3-lMkyTsc8" title="Shh… Whatever You Do, Don’t Make a Sound 🤫 | Love and Monsters | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>  
+  
+  
+ <!--Section 2-->
+  <div class="gray-border">
+    <div class="flex flex-col-reverse md:flex-row py-16 md:py-16 text-white justify-between md:gap-[100px] max-w-[1300px] mx-auto w-full items-center md:pb-[40px]">
+      <div class="relative w-full md:w-[48%]">
+        <!-- Big Image -->
+        <img class=" py-5  md:w-[full] md:h-[full] md:pl-[130px] pl-[35px]  " src="Home-Mobile.jpg" alt="">
+        <div class="flex items-center w-[70%] md:w-[60%] border-2 border-gray-700 justify-between gap-3 md:py-[0.5rem] py-[0.25rem] px-[0.5rem] md:px-[0.75rem] rounded-xl absolute left-[50%] bottom-[4%] -translate-x-1/2 bg-black">
+          <!-- Small Image -->
+          <img src="https://m.media-amazon.com/images/I/81SG03G+g7L._AC_UF894,1000_QL80_.jpg" alt="" class="md:h-[4.5rem] h-[3rem]">
+          <div class="text-left ">
+            <div class="md:text-base text-[0.9rem]">Stranger Things</div>
+            <div class="md:text-base text-[0.75rem] text-[#0071eb]">Downloading...</div>
+          </div>
+          <img class="h-[2rem] w-[2rem] rounded-xl" src="https://cdn.dribbble.com/users/79588/screenshots/2155335/animated_icon.gif" alt="">
+        </div>
+      </div>
+      <div class="md:w-[52%] w-full text-center md:text-left md:pr-5">
+        <h1 class="pb-3 title">Download your shows to watch offline.</h1>
+        <p class="subtitle">Save your favorites easily and always have something to watch.</p>
+      </div>
+    </div>
+  </div>  
+
+  <!--Section 3-->
+  <div class="gray-border">
+    <div class="flex md:flex-row flex-col text-white justify-between py-16 md:gap-[30px] max-w-[1100px] mx-auto items-center ">
+     <div class="md:w-[52%] w-full text-center md:text-left md:pl-20 ">
+       <h1 class="pb-3 title">Watch everywhere.</h1>
+       <p class="px-5 subtitle md:px-0" >Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+     </div>
+     <div class="relative md:block hidden md:w-[48%] w-[full] pl-60 pt-5">       
+     </div>
+    </div>
+  </div> 
+  
+  <!--Section 4-->
+  <div class="gray-border">
+    <div class="flex flex-col-reverse md:flex-row py-16 md:py-0 text-white justify-between md:gap-[100px] max-w-[1300px] mx-auto w-full items-center md:pb-[40px]">
+      <div class="relative w-full md:w-[48%] ">
+        <!-- Big Image -->
+        <img class="w-[full] md:w-[500px] h-[full] md:h-[500px] pl-[20px] md:pl-10 pt-20 pr-[20px] md:pr-[0] rounded-3xl pb-5" src="https://img.freepik.com/free-vector/scene-with-many-children-park-night_1308-43005.jpg" alt="">
+       
+      </div>
+      <div class="md:w-[52%] w-full text-center md:text-left md:pr-14">
+        <h1 class="pb-3 title">Create profiles for kids.</h1>
+        <p class="px-5 md:px-0 subtitle">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+      </div>
+    </div>
+  </div>  
+
+  <!-- FAQs -->
+  <div class="gray-border">
+    <div class="text-white max-w-[1100px] mx-auto py-[70px]">
+      <h1 class="w-full px-2 mb-16 text-center title md:px-0">Frequently Asked Questions</h1>
+      <ul class="md:w-[75%] w-full mx-auto px-5 md:px-0 ">
+        <li class="list-item">
+          <div class="list-item-title">What is Netflix?</div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="list-item-icon ">
+            <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+          </svg>          
+        </li>
+        <br>
+        <li class="list-item">
+          <div class="list-item-title">How much does Netflix cost?</div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="list-item-icon ">
+            <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+          </svg>          
+        </li>
+       <br>
+        <li class="list-item">
+          <div class="list-item-title">Where can I watch?</div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="list-item-icon ">
+            <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+          </svg>          
+        </li>
+        <br>
+        <li class="list-item">
+          <div class="list-item-title">How do I cancel?</div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="list-item-icon ">
+            <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+          </svg>          
+        </li>
+        <br>
+        <li class="list-item">
+          <div class="list-item-title">What can I watch on Netflix?</div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="list-item-icon ">
+            <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+          </svg>          
+        </li>
+        <br>
+        <li class="list-item">
+          <div class="list-item-title">Is Netflix good for Kids?</div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="list-item-icon ">
+            <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+          </svg>          
+        </li>                  
+      </ul>
+      <p class="text-[1.2rem] text-center mt-20 mb-4 font-light px-3 md:px-0">Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="flex flex-col items-center justify-center  md:flex-row md:items-stretch w-[90%] md:w-[70%] mx-auto">
+        <input type="text" placeholder="Email address" class=" w-full md:w-[60%]  px-[10px] py-2 md:py-4 bg-white placeholder:text-sm">
+        <button class="red-btn">          
+          <span> Get started</span>
+           <svg class="w-4 h-4 text-white fill-current md:h-5 md:w-5 " viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg"><desc>chevron</desc><path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill-rule="evenodd"></path></svg>
+        </button>  
+    </div>
+  </div> 
+  
+  
+  <footer class="gray-border">
+    <div class="max-w-[1000px] text-[#737373] py-[70px] px-5 md:px-[45px] w-[90%] mx-auto">
+      <h2 class="pb-5">Questions? Contact Us</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 text-[12px] md:text-[13px]">
+        <div>
+          <div class="footer-item">FAQ</div>
+          <div class="footer-item">Investor Relations</div>
+          <div class="footer-item">Privacy</div>
+          <div class="footer-item">Speed Test</div>
+        </div>
+        <div>
+          <div class="footer-item">Help Center</div>
+          <div class="footer-item">Jobs</div>
+          <div class="footer-item">Cookie Preferences</div>
+          <div class="footer-item">Legal Notices</div>
+        </div>
+        <div>
+          <div class="footer-item">Account</div>
+          <div class="footer-item">Ways to Watch</div>
+          <div class="footer-item">Corporate Information</div>
+          <div class="footer-item">Only on Netflix</div>
+        </div>
+        <div>
+          <div class="footer-item">Media Center</div>
+          <div class="footer-item">Terms of use</div>
+          <div class="footer-item">Contact Us</div>
+        </div>
+      </div>
+      <h2 class="pt-5 text-[13px] ">Netflix Sri Lanka</h2>
+    </div>
+  </footer>
+
+</body>
+</html>
